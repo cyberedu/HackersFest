@@ -1,0 +1,58 @@
+header nav{background-color:#2c3e50;color:#4e4e4e;}
+header nav ul{margin:0 auto;padding:0;list-style:none;overflow:auto;text-align:center;}
+header nav ul li{display:inline-block;font-family:Open Sans;margin-right:15px;padding:15px 10px;transition:.2s background;}
+@media screen and (max-width: 1000px){header nav ul li{margin-right:0}
+}@media screen and (max-width: 480px){header nav ul li{display:block;text-align:center;margin-right:0}
+}header nav ul li:hover{background:#1e2934;text-decoration:underline}
+header nav ul li a{color:#fff;display:block;text-decoration:none}
+section#formulario{background-color:#2c3e50;display:none;padding-top:30px;padding-bottom:10px;color:#fff;text-align:center;}
+section#formulario form h4{font-family:Open Sans;font-size:16px;font-weight:600}
+section#formulario form textarea{display:block;margin:0 auto;outline:none;padding:10px;transition:height .2s;width:380px;}
+section#formulario form textarea:hover{border:1px solid #ffa500}
+@media screen and (max-width: 480px){section#formulario form textarea{width:90%}
+}section#formulario form input[type="submit"]{border:0;background-color:#2ecc71;border-radius:5px;border-bottom:7px solid #2bb565;color:#fff;display:block;font-family:Open Sans;font-size:16px;font-weight:400;margin:0 auto;margin-top:10px;padding:10px 0 10px 0;outline:none;text-transform:uppercase;width:406px;}
+@media screen and (max-width: 480px){section#formulario form input[type="submit"]{width:95%}
+}section#presentacion{background-color:#000;color:#fff;text-align:center;background-image:url("../img/equipo.jpg");background-position:center center;background-repeat:no-repeat;height:362px;}
+section#presentacion h1{display:inline-block;margin:0 auto;font-family:Open Sans;font-weight:600;font-size:50px;padding:80px 0 0 0}
+section#presentacion p{background-color:rgba(0,0,0,0.3);font-size:18px;font-family:Open Sans;margin:0 auto;padding:10px 15px 10px 15px;position:relative;text-align:center;width:70%;}
+@media screen and (max-width: 900px){section#presentacion p{padding:0;width:100%}
+}@media screen and (max-width: 480px){section#presentacion p{padding:0;width:100%}
+}section#presentacion a{background-color:#06c;border-radius:7px;border-bottom:7px solid #0958a8;color:#fff;display:inline-block;padding:15px 30px 15px 30px;position:relative;top:70px;text-transform:uppercase;transition:.2s background;}
+@media screen and (max-width: 480px){section#presentacion a{top:0}
+}section#presentacion a:hover{background-color:#0b5fb3}
+section#tecnologias{background-color:#fff;text-align:center;font-family:Open Sans;padding-top:30px;}
+@media screen and (max-width: 480px){section#tecnologias{padding-top:110px}
+}section#tecnologias div.tecnologias figure{display:inline-block;margin:0 30px;transition:.2s;}
+section#tecnologias div.tecnologias figure:hover{-webkit-transform:scale(.8,.8)}
+section#titulo_hackers{background-color:#e8f7f4;border-bottom:1px solid #d0dfdc;border-top:1px solid #d0dfdc;text-align:center;}
+section#titulo_hackers h2{color:#2c3e50;font-weight:600;font-size:34px;font-family:Open Sans;text-align:center;text-transform:uppercase;width:100%}
+section#hackers{padding:70px 0 0 0;text-align:center;}
+section#hackers div.expositor{display:inline-block;width:30%;vertical-align:top;margin-bottom:20px;}
+@media screen and (max-width: 480px){section#hackers div.expositor{width:100%}
+}@media screen and (max-width: 900px){section#hackers div.expositor figure{width:100%}
+}@media screen and (max-width: 480px){section#hackers div.expositor figure{width:100%}
+}section#hackers div.expositor figure img:hover{background-color:#f00}
+section#hackers div.expositor h3{margin:0}
+section#hackers div.expositor a{color:#259ee4;font-size:16px;font-family:Open Sans;text-decoration:none}
+section#hackers div.expositor p{color:#4e4e4e;font-size:14px;font-family:Open Sans}
+section.parte{background-image:url("../img/hoffman.png");margin-bottom:30px;}
+section.parte div.trata{padding:20px 0 20px 0;width:100%;background-image:url("../img/trata.png");background-repeat:no-repeat;background-position:right bottom;}
+section.parte div.trata h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600}
+section.parte div.trata p{color:#4e4e4e;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%}
+section.parte div.puedo{padding:20px 0 20px 0;width:100%;background-image:url("../img/puedo.png");background-repeat:no-repeat;background-position:100px 10px;text-align:right;overflow:hidden;}
+section.parte div.puedo h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:right}
+section.parte div.puedo p{color:#4e4e4e;float:right;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%;}
+section.parte div.puedo p a{color:#008000;text-decoration:underline}
+section.parte div.lugar{padding:20px 0 20px 0;width:100%;background-image:url("../img/lugar.png");background-repeat:no-repeat;background-position:right center;text-align:left;overflow:hidden;}
+section.parte div.lugar h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:left}
+section.parte div.lugar p{color:#4e4e4e;float:left;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;max-width:50%}
+footer{background-color:#272727;padding:20px 0;}
+footer p{color:#767676;margin:0;font-family:Open Sans;font-weight:400;font-size:14px;text-align:center}
+div.rayitas{border-top:1px dashed #4e4e4e;margin-bottom:30px}
+.wrapper{width:1000px;margin:0 auto;}
+@media screen and (max-width: 900px){.wrapper{width:90%}
+}@media screen and (max-width: 480px){.wrapper{width:100%}
+}.wrapper2{width:1000px;margin:0 auto;}
+@media screen and (max-width: 900px){.wrapper2{width:90%}
+}@media screen and (max-width: 480px){.wrapper2{width:100%}
+}
