@@ -27,9 +27,13 @@ header
 				@media screen and (max-width: 1000px)
 					margin-right 0
 				@media screen and (max-width: 480px)
-					display block
+					display none
 					text-align center
 					margin-right 0
+				&.movil
+					display none
+					@media screen and (max-width: 480px)
+						display block
 				&:hover
 					background #1e2934
 					text-decoration underline
