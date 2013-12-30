@@ -165,12 +165,8 @@
 	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script>
-	$(function(){
-		$('textarea').autosize({append: "\n"});
-	}); 
-	</script>
-	<script>
     	$(function(){
+    		$('textarea').autosize({append: "\n"});
     		$('#reg').click(function(event){
     			event.preventDefault();
     			$('#formulario').slideDown();
@@ -181,6 +177,20 @@
     			$('#formulario').slideUp("slow");
     			$('#reg').text("Gracias por Registrarse, Eduar");
     		});
+
+    		//asi se hace js ;)
+    		var pantalla = {
+    			resize : function(){
+    				$(window).on('resize',function(){
+    					console.log('lol');
+    					$('#presentacion').css('margin-top',$('header').height());
+    				});
+    			},
+    			init : function(){
+    				pantalla.resize();
+    			}
+    		}
+    		pantalla.init();
     	})
     </script>
 </body>
