@@ -12,7 +12,8 @@
 <header>
     <nav>
         <div class="wrapper">
-            <ul>
+            <a href="#" id="nav-menu">Menu <span>&#9776</span></a>
+            <ul id="nav">
                 <li><a href="#titulo_hackers">Hackers</a></li>
                 <li><a href="#trata">¿De que trata?</a></li>
                 <li><a href="#exponer">¿Yo También puedo exponer?</a></li>
@@ -24,8 +25,8 @@
 </header>
     <section id="presentacion">
         <div class="wrapper2">
-            <h1>HACKERS FEST</h1>
-            <p>Hackers Raymi es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?. Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos</p>
+            <h1>#HACKERS FEST</h1>
+            <p>Hackers Fest es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?. Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos</p>
             <a href="#" id="reg" class="registrarse">registrate con facebook</a>
         </div>
     </section>
@@ -232,6 +233,28 @@
             }
             pantalla.init();
         })
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var n = '#nav', no = 'nav-open';
+            $('#nav-menu').click(function(){
+                console.log("click");
+                if($(n).hasClass(no)){
+                    $(n).animate({height:0},300);
+                    setTimeout(function(){
+                        $(n).removeClass(no).removeAttr('style');
+                    },320);
+                }else{
+                    var newH = $(n).css('height','auto').height();
+                    $(n).height(0).animate({height:newH},300);
+                    setTimeout(function(){
+                        $(n).addClass(no).removeAttr('style');
+                    },320);
+                }
+            });
+        });
+    </script>
     </script>
 </body>
 </html>

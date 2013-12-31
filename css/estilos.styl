@@ -12,12 +12,25 @@ header
 	nav
 		background-color color_titulo
 		color color_texto
+		#nav-menu
+			display none
+			@media screen and (max-width: 480px)
+				display block
+				padding 15px 10px
+				text-align center
+				color white
+				text-decoration none
+				span
+					display inline-block
+					margin-right 20px
 		ul
 			margin 0 auto
 			padding 0
 			list-style none
 			overflow auto
 			text-align center
+			@media screen and (max-width: 480px)
+				height 0
 			li 
 				display inline-block
 				font-family Open Sans
@@ -37,6 +50,9 @@ header
 					color white
 					display block
 					text-decoration none
+
+.nav-open
+	height auto
 
 section#formulario
 	background-color color_titulo
