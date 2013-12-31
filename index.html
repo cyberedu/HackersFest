@@ -26,8 +26,8 @@
     <section id="presentacion">
         <div class="wrapper2">
             <h1>#HACKERS FEST</h1>
-            <p>Hackers Fest es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?. Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos</p>
-            <a href="#" id="reg" class="registrarse">registrate con facebook</a>
+            <p>Hackers Fest es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?.<span> Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos</span></p>
+            <a href="#" id="reg" class="registrarse">Regístrate con facebook (ES GRATIS)</a>
         </div>
     </section>
     <section id="formulario">
@@ -149,8 +149,7 @@
                     ¿Puedo yo también exponer?
                 </h2>
                 <p>
-                    El mundo tecnologico esta en constante evolución, si quieres compartir alguno de tus superpoderes con nosotros, bienvenido! Puedes registrarte aqui.
-                    El mundo tecnologico esta en constante evolución, si quieres compartir alguno de tus superpoderes con nosotros, bienvenido! 
+                    El mundo tecnologico esta en constante evolución, si quieres compartir alguno de tus superpoderes con nosotros, bienvenido!  Solo tienes que enviarnos un correo explicándonos brevemente con que tema puedes particiar y listo!  
                     <a href="#">Puedes registrarte aqui.</a>
                 </p>
             </div>  
@@ -238,8 +237,8 @@
     <script>
         $(document).ready(function() {
             var n = '#nav', no = 'nav-open';
-            $('#nav-menu').click(function(){
-                console.log("click");
+            $('#nav-menu').click(function(event){
+                event.preventDefault();
                 if($(n).hasClass(no)){
                     $(n).animate({height:0},300);
                     setTimeout(function(){

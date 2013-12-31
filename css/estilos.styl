@@ -125,8 +125,12 @@ section#presentacion
 			padding 0
 			width 100%
 		@media screen and (max-width: 480px)
+			font-size 14px
 			padding 0
 			width 100%
+		span 
+			@media screen and (max-width: 480px)
+				display none
 	a
 		background-color #0066cc
 		border-radius 7px
@@ -136,10 +140,12 @@ section#presentacion
 		padding 15px 30px 15px 30px
 		position relative
 		top 70px
+		font-size 14px
 		text-transform uppercase
 		transition .2s background
 		@media screen and (max-width: 480px)
-			top 0px
+			top 40px
+			font-size 14px
 		&:hover
 			background-color #0b5fb3
 section#tecnologias
@@ -211,11 +217,19 @@ section.parte
 		background-image url('../img/trata.png')
 		background-repeat no-repeat
 		background-position right bottom
+		@media screen and (max-width: 480px)
+			text-align center
+			background-size 50% auto
+			background-position bottom center
 		h2
 			color color_titulo
 			font-family Open Sans
 			font-size 32px
 			font-weight 600
+			@media screen and (max-width: 480px)
+				font-size 20px
+				text-align center
+				margin 0
 		p
 			color color_texto
 			font-family Open Sans
@@ -223,6 +237,9 @@ section.parte
 			font-weight 400
 			line-height 30px
 			width 50%
+			@media screen and (max-width: 480px)
+				font-size 14px
+				min-width 100%
 	div.puedo
 		padding 20px 0 20px 0
 		width 100%
@@ -231,12 +248,20 @@ section.parte
 		background-position 100px 10px
 		text-align right
 		overflow hidden
+		@media screen and (max-width: 480px)
+			text-align center
+			background-size 40% auto
+			background-position center bottom
 		h2
 			color color_titulo
 			font-family Open Sans
 			font-size 32px
 			font-weight 600
 			text-align right
+			@media screen and (max-width: 480px)
+				font-size 20px
+				text-align center
+				margin 0
 		p
 			color color_texto
 			float right
@@ -245,8 +270,11 @@ section.parte
 			font-weight 400
 			line-height 30px
 			width 50%
+			@media screen and (max-width: 480px)
+				font-size 14px
+				min-width 100%
 			a
-				color green
+				color color_titulo
 				text-decoration underline
 
 	div.lugar
@@ -257,12 +285,20 @@ section.parte
 		background-position right center
 		text-align left
 		overflow hidden
+		@media screen and (max-width: 480px)
+			text-align center
+			background-size 50% auto
+			background-position bottom center
 		h2
 			color color_titulo
 			font-family Open Sans
 			font-size 32px
 			font-weight 600
 			text-align left
+			@media screen and (max-width: 480px)
+				font-size 20px
+				text-align center
+				margin 0
 		p
 			color color_texto
 			float left
@@ -271,6 +307,9 @@ section.parte
 			font-weight 400
 			line-height 30px
 			max-width 50%
+			@media screen and (max-width: 480px)
+				font-size 14px
+				min-width 100%
 
 footer
 	background-color #272727

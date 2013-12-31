@@ -22,9 +22,10 @@ section#formulario form textarea:hover{border:1px solid #ffa500}
 section#presentacion h1{display:inline-block;margin:0 auto;font-family:Open Sans;font-weight:600;font-size:50px;padding:80px 0 0 0}
 section#presentacion p{background-color:rgba(0,0,0,0.3);font-size:18px;font-family:Open Sans;margin:0 auto;padding:10px 15px 10px 15px;position:relative;text-align:center;width:70%;}
 @media screen and (max-width: 900px){section#presentacion p{padding:0;width:100%}
-}@media screen and (max-width: 480px){section#presentacion p{padding:0;width:100%}
-}section#presentacion a{background-color:#06c;border-radius:7px;border-bottom:7px solid #0958a8;color:#fff;display:inline-block;padding:15px 30px 15px 30px;position:relative;top:70px;text-transform:uppercase;transition:.2s background;}
-@media screen and (max-width: 480px){section#presentacion a{top:0}
+}@media screen and (max-width: 480px){section#presentacion p{font-size:14px;padding:0;width:100%}
+}@media screen and (max-width: 480px){section#presentacion p span{display:none}
+}section#presentacion a{background-color:#06c;border-radius:7px;border-bottom:7px solid #0958a8;color:#fff;display:inline-block;padding:15px 30px 15px 30px;position:relative;top:70px;font-size:14px;text-transform:uppercase;transition:.2s background;}
+@media screen and (max-width: 480px){section#presentacion a{top:40px;font-size:14px}
 }section#presentacion a:hover{background-color:#0b5fb3}
 section#tecnologias{background-color:#fff;text-align:center;font-family:Open Sans;padding-top:30px;}
 @media screen and (max-width: 480px){section#tecnologias{padding-top:110px}
@@ -43,16 +44,25 @@ section#hackers div.expositor a{color:#259ee4;font-size:16px;font-family:Open Sa
 section#hackers div.expositor p{color:#4e4e4e;font-size:14px;font-family:Open Sans}
 section.parte{background-image:url("../img/hoffman.png");margin-bottom:30px;}
 section.parte div.trata{padding:20px 0 20px 0;width:100%;background-image:url("../img/trata.png");background-repeat:no-repeat;background-position:right bottom;}
-section.parte div.trata h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600}
-section.parte div.trata p{color:#4e4e4e;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%}
-section.parte div.puedo{padding:20px 0 20px 0;width:100%;background-image:url("../img/puedo.png");background-repeat:no-repeat;background-position:100px 10px;text-align:right;overflow:hidden;}
-section.parte div.puedo h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:right}
-section.parte div.puedo p{color:#4e4e4e;float:right;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%;}
-section.parte div.puedo p a{color:#008000;text-decoration:underline}
+@media screen and (max-width: 480px){section.parte div.trata{text-align:center;background-size:50% auto;background-position:bottom center}
+}section.parte div.trata h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;}
+@media screen and (max-width: 480px){section.parte div.trata h2{font-size:20px;text-align:center;margin:0}
+}section.parte div.trata p{color:#4e4e4e;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%;}
+@media screen and (max-width: 480px){section.parte div.trata p{font-size:14px;min-width:100%}
+}section.parte div.puedo{padding:20px 0 20px 0;width:100%;background-image:url("../img/puedo.png");background-repeat:no-repeat;background-position:100px 10px;text-align:right;overflow:hidden;}
+@media screen and (max-width: 480px){section.parte div.puedo{text-align:center;background-size:40% auto;background-position:center bottom}
+}section.parte div.puedo h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:right;}
+@media screen and (max-width: 480px){section.parte div.puedo h2{font-size:20px;text-align:center;margin:0}
+}section.parte div.puedo p{color:#4e4e4e;float:right;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;width:50%;}
+@media screen and (max-width: 480px){section.parte div.puedo p{font-size:14px;min-width:100%}
+}section.parte div.puedo p a{color:#2c3e50;text-decoration:underline}
 section.parte div.lugar{padding:20px 0 20px 0;width:100%;background-image:url("../img/lugar.png");background-repeat:no-repeat;background-position:right center;text-align:left;overflow:hidden;}
-section.parte div.lugar h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:left}
-section.parte div.lugar p{color:#4e4e4e;float:left;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;max-width:50%}
-footer{background-color:#272727;padding:20px 0;}
+@media screen and (max-width: 480px){section.parte div.lugar{text-align:center;background-size:50% auto;background-position:bottom center}
+}section.parte div.lugar h2{color:#2c3e50;font-family:Open Sans;font-size:32px;font-weight:600;text-align:left;}
+@media screen and (max-width: 480px){section.parte div.lugar h2{font-size:20px;text-align:center;margin:0}
+}section.parte div.lugar p{color:#4e4e4e;float:left;font-family:Open Sans;font-size:18px;font-weight:400;line-height:30px;max-width:50%;}
+@media screen and (max-width: 480px){section.parte div.lugar p{font-size:14px;min-width:100%}
+}footer{background-color:#272727;padding:20px 0;}
 footer p{color:#767676;margin:0;font-family:Open Sans;font-weight:400;font-size:14px;text-align:center}
 div.rayitas{border-top:1px dashed #4e4e4e;margin-bottom:30px}
 .wrapper{width:1000px;margin:0 auto;}
