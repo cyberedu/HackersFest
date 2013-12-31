@@ -1,0 +1,200 @@
+!!!DOCTYPE html
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+        %title Hackers Fest::Evento Tecnológico
+        %link{:href => "css/normalize.css", :rel => "stylesheet"}
+          %link{:href => "css/estilos.css", :rel => "stylesheet"}
+            %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600", :rel => "stylesheet", :type => "text/css"}
+  %body
+    %header
+      %nav
+        .wrapper
+          %a#nav-menu{:href => "#"}
+            Menu
+            %span &#9776
+          %ul#nav
+            %li
+              %a{:href => "#titulo_hackers"} Hackers
+            %li
+              %a{:href => "#trata"} ¿De que trata?
+            %li
+              %a{:href => "#exponer"} ¿Yo También puedo exponer?
+            %li
+              %a{:href => "#lugar"} ¿Lugar?
+            %li
+              %a{:href => "#cronograma"} ¿Cronograma?
+    %section#presentacion
+      .wrapper2
+        %h1 #HACKERS FEST
+        %p
+          Hackers Fest es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?.
+          %span Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos
+        %a#reg.registrarse{:href => "#"} Registro a partir del 2 de Enero
+    %section#formulario
+      .wrapper
+        %form{:action => ""}
+          %h4
+            ¿Que teconología te gustaría que se tratáse en el evento?
+            %h4
+              %textarea#textarea{:name => "mensaje", :placeholder => "Tu comentario"}
+              %input#enviar{:type => "submit"}
+    %section#tecnologias
+      .tecnologias
+        %figure
+          =image_tag "icono_html5.jpg", alt: "Logotipo HTML5", title: "Logotipo HTML5"
+        %figure
+          =image_tag "icono_python.jpg", alt: "Logotipo Python", title: "Logotipo Python"
+        %figure
+          =image_tag "icono_android.jpg", alt: "Logotipo Android", title: "Logotipo Android"
+        %figure
+          =image_tag "icono_nodejs.jpg", alt: "Logotipo Node.js", title: "Logotipo Node.js"
+        %figure
+          =image_tag "icono_ruby.jpg", :alt => "Logotipo Ruby", :title => "Logotipo Ruby"
+    %section#titulo_hackers
+      .wrapper
+        %h2
+          hackers
+    %section#hackers
+      .wrapper
+        .expositor
+          %figure
+            =image_tag "avatar_educartoon.jpg", :alt => "Avatar Educartoons", :title => "Educartoons"
+          %h3 Eduar Rubén
+          %a{:href => "http://www.twitter.com/educartoons"} @educartoons
+          %p
+            Nerd, melómano y lector voraz. Aunque trabaja en
+            el mundo tecnológico apuesta por la contracultura.
+        .expositor
+          %figure
+            =image_tag "avatar_kerry.jpg", :alt => "Avatar Kerry", :title => "Kerry"
+          %h3 Kerry Pérez
+          %a{:href => "http://www.twitter.com/kerpie"} @kerpie
+          %p
+            Programador Certificado Oracle, Desarrollador Android, Colaborador en #{link_to '@androideity', 'http://www.twitter.com/androideity'} y #{link_to '@tutsplus', 'http://www.twitter.com/tutsplus'}
+            
+        .expositor
+          %figure
+            =image_tag "avatar_alonso.jpg", :alt => ""
+          %h3 Alonso Calle
+          %a{:href => "http://www.twitter.com/_AlonsoCN"} @_AlonsoCN
+          %p
+            Ing. de Sistemas. Desarrollador Backend, Gamer, Skater, Zurdo.  Fascinado por la creacion de videojuegos.
+        .expositor
+          %figure
+            =image_tag "avatar_jorge.jpg", :alt => ""
+          %h3 Jorge Pacora
+          %a{:href => "http://www.twitter.com/jpacorasilva"} @jpacorasilva
+          %p
+            Nómada Digital, Fundador de Ikey Software, Co-Fundador de Tacna Developers, Él ama Node.js.
+        .expositor
+          %figure
+            =image_tag "avatar_ricardo.jpg", :alt => ""
+          %h3 Ricardo Coronado
+          %a{:href => "https://www.facebook.com/rikardo.corp"} #RicardoCorp
+          %p
+            Desarrollador Ninja de Aplicaciones en PHP con Codeigniter.
+            Ing. de Informática y Sistemas.
+      / Fin de Wrapper
+    %br
+      %section#trata.parte
+        .wrapper
+          .trata
+            %h2
+              ¿De qué trata?
+            %p
+              Hackers Fest es el mejor evento de tecnología a desarrollarse en Tacna, donde héroes, geeks y hackers mostraremos y hablaremos sobre tecnologías que no puedes permitirte perder, te enseñaremos a perder el miedo a utilizarlas y a convertirte en un rockstar. Todos quieren ser rockstars!
+      .rayitas
+      %section#exponer.parte
+        .wrapper
+          .puedo
+            %h2
+              ¿Puedo yo también exponer?
+            %p
+              El mundo tecnologico esta en constante evolución, si quieres compartir alguno de tus superpoderes con nosotros, bienvenido!  Solo tienes que enviarnos un correo explicándonos brevemente con que tema puedes particiar y listo!.  Envia tu correo a educartoons@gmail.com
+      .rayitas
+      %section#lugar.parte
+        .wrapper
+          .lugar
+            %h2
+              ¿Lugar?
+            %p
+              Aún estamos en la búsqueda de un local
+              que nos brinde las características necesarias
+              para poder desarrollar el evento de manera
+              confortable.
+              Si conoces a alguien que nos pueda echar una
+              mano con esto.  Escríbenos a educartoons@gmail.com
+      .rayitas
+      %footer
+        .wrapper
+          %p Tacna-Perú 2014
+      %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+      %script{:src => "js/jquery.autosize.min.js"}
+      :javascript
+        $(function(){
+            
+            //así js está más ordenado.
+
+            var formulario = {
+                textarea : function(){
+                    $('textarea').autosize({append: "\n"});
+                },
+                mostrar : function(){
+                    $('#reg').click(function(event){
+                        event.preventDefault();
+                        $('#formulario').slideDown();
+                        $(this).text("Aquí estará tu nombre");
+                    });
+                },
+                enviar : function(){
+                    $('#enviar').click(function(event){
+                        event.preventDefault();
+                        $('#formulario').slideUp("slow");
+                        $('#reg').text("Gracias por Registrarse, Demo");
+                    });
+                },
+                init : function(){
+                    formulario.textarea();
+                    formulario.mostrar();
+                    formulario.enviar();
+                }
+            }
+            formulario.init();
+
+            var pantalla = {
+                resize : function(){
+                    $(window).on('resize',function(){
+                        pantalla.calcular();
+                    });
+                },
+                calcular : function(){
+                    $('#presentacion').css('margin-top',$('header').height());
+                },
+                init : function(){
+                    pantalla.resize();
+                    pantalla.calcular();
+                }
+            }
+            pantalla.init();
+        })
+          :javascript
+        $(document).ready(function() {
+            var n = '#nav', no = 'nav-open';
+            $('#nav-menu').click(function(event){
+                event.preventDefault();
+                if($(n).hasClass(no)){
+                    $(n).animate({height:0},300);
+                    setTimeout(function(){
+                        $(n).removeClass(no).removeAttr('style');
+                    },320);
+                }else{
+                    var newH = $(n).css('height','auto').height();
+                    $(n).height(0).animate({height:newH},300);
+                    setTimeout(function(){
+                        $(n).addClass(no).removeAttr('style');
+                    },320);
+                }
+            });
+        });
