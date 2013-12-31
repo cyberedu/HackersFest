@@ -1,3 +1,6 @@
+<?
+  // include_once 'config.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,11 +34,15 @@
 	</section>
 	<section id="formulario">
 		<div class="wrapper">
-			<form action="">
+			<form action="" id="form_reg" method="post">
 				<h4>
 					¿Que teconología te gustaría que se tratáse en el evento?
 				<h4>
-				<textarea name="mensaje" id="textarea" placeholder="Tu comentario"></textarea>
+				<textarea name="mensaje" id="textarea" placeholder="Tu comentario" required></textarea>
+        <input type="hidden" id="id" name="id">
+        <input type="hidden" id="nombre" name="nombre">
+        <input type="hidden" id="username" name="username">
+        <input type="hidden" id="email" name="email">
 				<input id="enviar" type="submit">
 			</form>
 		</div>
@@ -161,37 +168,11 @@
 		</div>
 	</footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/simpleFacebookGraph.js"></script>
 	<script src="js/jquery.autosize.min.js"></script>
 	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
-	<script>
-    	$(function(){
-    		$('textarea').autosize({append: "\n"});
-    		$('#reg').click(function(event){
-    			event.preventDefault();
-    			$('#formulario').slideDown();
-    			$(this).text("Eduar Rubén Apaza Yáñez");
-    		});
-    		$('#enviar').click(function(event){
-    			event.preventDefault();
-    			$('#formulario').slideUp("slow");
-    			$('#reg').text("Gracias por Registrarse, Eduar");
-    		});
+  <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/hack-registrar.js"></script>
 
-    		//asi se hace js ;)
-    		var pantalla = {
-    			resize : function(){
-    				$(window).on('resize',function(){
-    					console.log('lol');
-    					$('#presentacion').css('margin-top',$('header').height());
-    				});
-    			},
-    			init : function(){
-    				pantalla.resize();
-    			}
-    		}
-    		pantalla.init();
-    	})
-    </script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 var fb = {
   config :{
   // CONFIG VARS: 
-    app_id : '140433329431523', 
+    app_id : '1447387525481124', 
     use_xfbml : true,
-    extendPermissions : 'email,publish_stream,user_events' , 
+    extendPermissions : 'email' , 
     // info: http://developers.facebook.com/docs/reference/api/permissions/
-    locale : 'es_ES'
+    locale : 'es_ES' 
     // all locales in: http://www.facebook.com/translations/FacebookLocales.xml
   // END CONFIG VARS
   },
@@ -16,26 +16,22 @@ var fb = {
   login : function (callback){
     FB.login(function(r) {
       if (r.status == 'connected') {
-      	// loading
-      	//$('body').prepend('<div class="div-carga"><img src="'+$('#base_url_js').val()+'static/images/dog2.gif"/></div>');
-      	$('body').css('cursor','wait');
         FB.api('/me/permissions',function(perm){
-          
           fb.logged = true;
-		  fb.perms = [];
-		  for(i in perm.data[0])
-		  {
-			if (perm.data[0][i] == 1)
-			{
-				fb.perms.push(i);
-			}
-		  }
-        });	   
-		fb.getUser(callback);
+      fb.perms = [];
+      for(i in perm.data[0])
+      {
+      if (perm.data[0][i] == 1)
+      {
+        fb.perms.push(i);
+      }
+      }
+        });    
+    fb.getUser(callback);
       } else {
         fb.logged = false;
         fb.perms = [];
-		callback();
+    callback();
       }
     },{scope:fb.config.extendPermissions});
     return false;
@@ -45,19 +41,17 @@ var fb = {
     FB.getLoginStatus(function(r) {
       if (r.status == 'connected' ) { 
         FB.api('/me/permissions',function(perm){
-          
           fb.logged = true;
-		  fb.perms = [];
-		  for(i in perm.data[0])
-		  {
-			if (perm.data[0][i] == 1)
-			{
-				fb.perms.push(i);
-			}
-		  }
-        });	   
+      fb.perms = [];
+      for(i in perm.data[0])
+      {
+      if (perm.data[0][i] == 1)
+      {
+        fb.perms.push(i);
+      }
+      }
+        });    
         fb.getUser(callback);
-        //fb.getEvents(callback);
         return true;
       } else {
         fb.logged = false;
@@ -70,19 +64,10 @@ var fb = {
   getUser : function(callback){
     FB.api('/me', function(r){
       var user = r;
-      //console.log(r);
       user.picture = "https://graph.facebook.com/"+user.id+"/picture";
       fb.user=user; callback(user); 
     }); 
   },
-  /*getEvents : function(callback){
-    FB.api('/me/events', function(r){
-      var evento = r;
-      //console.log(r);
-      //user.picture = "https://graph.facebook.com/"+user.id+"/picture";
-      fb.evento=evento; callback(evento); 
-    }); 
-  },*/
   publish : function (publishObj,callback,noReTry) {
   // publishObj: http://developers.facebook.com/docs/reference/api/post   
     if (fb.logged && fb.hasPerm('publish_stream'))
@@ -99,7 +84,7 @@ var fb = {
     else
     { 
       if (!noReTry)
-      	return fb.login(function() { return fb.publish(publishObj,callback,1)});
+        return fb.login(function() { return fb.publish(publishObj,callback,1)});
       else
       {
         callback(false);
