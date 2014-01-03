@@ -47,6 +47,9 @@ $(function(){
     });
   });
 
+  // webticker
+  $("#webticker").webTicker();
+
 
 });
 

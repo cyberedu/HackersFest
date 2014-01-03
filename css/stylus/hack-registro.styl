@@ -1,0 +1,96 @@
+@import "classes.styl"
+
+ico_blanco = '../img/glyphicons-halflings-white.png'
+ico_negro = '../img/glyphicons-halflings-black.png'
+
+
+
+#suscritos
+	.suscritos
+		.tickercontainer	
+			width 100%
+			height 120px
+			.mask
+				width 100%
+				height 120px
+				padding 0
+				top 0
+				ul
+					li
+						position relative
+						width 100px
+						height 100px
+						transform skew(-12deg)
+						background #107096
+						border-right 29px solid rgb(223, 230, 61)
+						border-left 13px solid rgb(0, 48, 75)
+						.comentario
+							display none
+							&.over
+								display block
+								background red
+								height 100px
+								width 300px
+								position absolute
+								left 130px
+								padding 5px
+								box-sizing border-box
+								border-right 10px solid rgb(18, 132, 255)
+						&:hover
+							.comentario
+								display block
+								background red
+								height 100px
+								width 300px
+								position absolute
+								left 130px
+								padding 5px
+								box-sizing border-box
+								border-right 10px solid rgb(18, 132, 255)
+								z-index 10
+
+
+// .row-casino
+// 	margin 0 auto
+// 	font-size 1em
+
+// .form-horizontal
+// 	max-width 450px
+// 	width 100%
+// 	margin 0 auto
+// 	.control-group
+// 		border none
+// 		label
+// 			width 130px
+// 		.controls
+// 			margin-left 150px
+// 			position relative
+// 			.loading-casino
+// 				&.l-modal-inn
+// 					top 24% !important
+
+// .conte-table
+// 	width 80%
+// 	margin 2% auto
+
+// #cod_int
+// 	text-transform uppercase
+
+// // para tabla-casino
+// table.table-casino	
+// 	tr td:first-child
+// 		text-align left !important
+
+
+// // Hasta smartphones de 480px
+// @media (max-width: 480px)
+
+// // de Smartphones a Tablets
+// @media (min-width: 481px) and (max-width: 767px)
+
+// // de Tablets a pantallas de desktops
+// @media (min-width: 768px) and (max-width: 979px)
+
+// @media (min-width: 980px)
+
+

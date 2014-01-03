@@ -9,6 +9,8 @@
 	<title>Hackers Fest::Evento Tecnológico</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/hack-registro.css">
+	<link rel="stylesheet" href="css/webticker.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -45,6 +47,62 @@
         <input type="hidden" id="email" name="email">
 				<input id="enviar" type="submit">
 			</form>
+		</div>
+	</section>
+	<section id="suscritos">
+		<div class="suscritos">
+			<ul id="webticker" >	
+				<li id='item1' style="background: url('img/avatar_kerry.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item2' style="background: url('img/avatar_educartoon.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item3' style="background: url('img/eduar.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item4' style="background: url('img/avatar_educartoon.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item5' style="background: url('img/avatar_educartoon.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item6' style="background: url('img/avatar_kerry.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item7' style="background: url('img/avatar_kerry.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item8' style="background: url('img/avatar_educartoon.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item9' style="background: url('img/avatar_educartoon.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+				<li id='item10' style="background: url('img/avatar_kerry.jpg')">
+					<div class="comentario">
+						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef
+					</div>
+				</li>
+			</ul>
 		</div>
 	</section>
 	<section id="tecnologias">
@@ -104,9 +162,6 @@
 					Desarrollador Backend, Gamer, Skater, Zurdo.
 				</p>
 			</div>
-
-			
-
 		</div><!-- Fin de Wrapper -->
 	</section>
 	<br>
@@ -168,10 +223,11 @@
 		</div>
 	</footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="js/simpleFacebookGraph.js"></script>
+	<script src="js/simpleFacebookGraph.js"></script>
 	<script src="js/jquery.autosize.min.js"></script>
 	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
-  <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+  	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+  	<script src="js/jquery.webticker.js"></script>
 	<script src="js/hack-registrar.js"></script>
 
 </body>

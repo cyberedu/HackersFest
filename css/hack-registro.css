@@ -1,0 +1,16 @@
+/*  CSS3 ✰ Classes  */
+.ir{direction:ltr;display:block;height:100%;overflow:hidden;position:relative;text-align:left;text-indent:100%;white-space:nowrap;width:100%}
+.hidden{display:none}
+.visuallyhidden{left:-9999px;position:absolute !important;top:-9999px}
+.invisible{visibility:hidden}
+.noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
+.clearfix{zoom:1;}
+.clearfix:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.clear{display:block;clear:both;zoom:1}
+.nomargin{margin:0 !important}
+#suscritos .suscritos .tickercontainer{width:100%;height:120px;}
+#suscritos .suscritos .tickercontainer .mask{width:100%;height:120px;padding:0;top:0;}
+#suscritos .suscritos .tickercontainer .mask ul li{position:relative;width:100px;height:100px;-o-transform:skew(-12deg);-ms-transform:skew(-12deg);-moz-transform:skew(-12deg);-webkit-transform:skew(-12deg);transform:skew(-12deg);background:#107096;border-right:29px solid #dfe63d;border-left:13px solid #00304b;}
+#suscritos .suscritos .tickercontainer .mask ul li .comentario{display:none;}
+#suscritos .suscritos .tickercontainer .mask ul li .comentario.over{display:block;background:#f00;height:100px;width:300px;position:absolute;left:130px;padding:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border-right:10px solid #1284ff}
+#suscritos .suscritos .tickercontainer .mask ul li:hover .comentario{display:block;background:#f00;height:100px;width:300px;position:absolute;left:130px;padding:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border-right:10px solid #1284ff;z-index:10}
