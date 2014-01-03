@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Hackers Fest::Evento Tecnológico</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/token-input.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="feedback">
+	<div class="wrapper">
+		<h1>HACKERSFEST/<span>feedback</span></h1>
+		<a href="#" id="agregar"><span class="icon-user"></span>Agregar Admin</a>
+	</div>
+</header>
+<section id="crear-admins">
+	<div class="wrapper">
+		<h2>Administradores</h2>
+		<ul class="admins">
+			<li>Eduar Apaza Yañez <a href="#"><span class="icon-remove" title="borrar"></span></a></li>
+			<li>Kerry Perez<a href="#"><span class="icon-remove" title="borrar"></span></a></li>
+			<li>Jorge Pacora<a href="#"><span class="icon-remove" title="borrar"></span></a></li>
+		</ul>
+		<h2>Agregar</h2>
+		<form action="#">
+			<input type="text" placeholder="Escribe su nombre aqui">
+			<input type="submit" id="crear" value="CREAR">
+		</form>
+	</div>
+</section>
+<section id="mensajes">
+	<div class="wrapper">
+		<h2>Mensajes</h2>
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>	
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>	
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>	
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>
+		<article>
+			<figure>
+				<img src="img/avatar_ed.png" alt="Avatar Eduar">
+			</figure>
+			<div>
+				<h3>Eduar Apaza Yañez</h3>
+				<p>Hola, me gustaría que traten temas de frontend y usabilidad: tales como wireframes 
+				frameworks, gracias.Hola, me gustaría que traten temas de frontend y usabilidad:</p>
+			</div>
+			<div class="boton">
+				<a href="#"><span class="icon-remove"></span></a>
+			</div>
+		</article>			
+	</div>
+</section>
+<footer>
+        <div class="wrapper">
+            <p>Tacna-Perú 2014</p>
+        </div>
+    </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+        $(function(){
+            
+            //así js está más ordenado.
+
+            var formulario = {
+                mostrar : function(){
+                    $('#agregar').click(function(event){
+                        event.preventDefault();
+                        $('#crear-admins').slideToggle();
+                    });
+                },
+                borrar : function(){
+                	$('li span').click(function(event){
+                		event.preventDefault();
+                		$('li').has(this).remove();
+                	});
+                },
+                init : function(){
+                    formulario.mostrar();
+                    formulario.borrar();
+                }
+            }
+            formulario.init();
+        });
+    </script>
+</body>
+</html>
