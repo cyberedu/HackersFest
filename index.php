@@ -31,7 +31,7 @@
 		<div class="wrapper2">
 			<h1>HACKERS FEST</h1>
 			<p>Hackers Raymi es un evento para mostrar tecnología, compartir tecnología, respirar tecnología y hablar sobre tecnología ¿ya dije que nos gusta la tecnología?. Ven y comparte con nuestros héroes tus conocimientos y descubre porque nos fascina tanto lo que hacemos</p>
-			<a href="#" id="reg" class="registrarse">registrate con facebook</a>
+			<a href="#" id="reg" class="registrarse login">registrate con facebook</a>
 		</div>
 	</section>
 	<section id="formulario">
@@ -51,7 +51,7 @@
 	</section>
 	<section id="suscritos">
 		<div class="suscritos">
-			<ul id="webticker" >	
+			<ul id="webticker">	
 				<li id='item1' style="background: url('img/avatar_kerry.jpg')">
 					<div class="comentario">
 						efwefwefwefwf wef wef wef wef gwefwef wefwefwefwe fwefwe ff we fwe ffe wef  ewf wef

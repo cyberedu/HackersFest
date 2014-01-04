@@ -19,12 +19,13 @@ if($filas==0){
 		$r[0] = TRUE;
 	}else{
 		$r[0] = FALSE;
-		$r[1] = mysql_error();
+		// $r[1] = mysql_error();
+		$r[1] = 'Ocurrio un imprevisto, intente nuevamente';
 	}
 // en caso de ya estra registrado
 }else{
 	$r[0] = FALSE;
-	$r[1] = 'Su cuenta de facebook ya se encuntra registrada en nuestro sistema';
+	$r[1] = 'Ya se encuentra registrado.';
 }
 
 echo json_encode($r);

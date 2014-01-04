@@ -19,7 +19,7 @@ $(function(){
 
   $('textarea').autosize({append: "\n"});
   // obtener los datos de facebook
-  $('#reg').click(function(event){
+  $('#presentacion').on('click','#reg.login',function(event){
       // event.stopPropagation();
       $conte = $(this);
       $conte.text('Procesando...');
@@ -37,18 +37,36 @@ $(function(){
       console.log(data);
       var datos =  $.parseJSON(data);
       console.log(datos);
+      nombre = $('#nombre').val();
       if(datos[0]){
-        nombre = $('#nombre').val();
         $('#reg').text("Gracias por Registrarse, "+nombre);
       }else{
-        $('#reg').text("Ocurrio un imprevisto, recarga la página");
+        mensaje = datos[1];
+        $('#reg').removeClass('login');
+        $('#reg').text(nombre+', '+mensaje);
       }
       $('#formulario').slideUp("slow");
     });
   });
 
   // webticker
-  $("#webticker").webTicker();
+  $("#webticker").webTicker({startEmpty: false,speed:40});
+
+  $("ul#webticker li").hover(function(event){
+    w_window = $("#suscritos").width();
+    pointer  = event.pageX;
+    $conte = $(this);
+    cen = w_window-pointer;
+    // console.log(cen);
+    if(cen >= 240){
+      // console.log('derecha');
+      $conte.find('.comentario').css({'right': 'auto','left': '100px'});
+    }else{
+      // console.log('izquierda');
+      $conte.find('.comentario').css({'right': '100px','left': 'auto'});
+      // console.log($conte.find('.comentario'));      
+    }
+  });
 
 
 });

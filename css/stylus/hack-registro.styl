@@ -9,10 +9,10 @@ ico_negro = '../img/glyphicons-halflings-black.png'
 	.suscritos
 		.tickercontainer	
 			width 100%
-			height 120px
+			height 100px
 			.mask
 				width 100%
-				height 120px
+				height 100px
 				padding 0
 				top 0
 				ul
@@ -20,34 +20,33 @@ ico_negro = '../img/glyphicons-halflings-black.png'
 						position relative
 						width 100px
 						height 100px
-						transform skew(-12deg)
+						// transform skew(-5deg)
 						background #107096
-						border-right 29px solid rgb(223, 230, 61)
-						border-left 13px solid rgb(0, 48, 75)
+						// border-right 10px solid rgb(223, 230, 61)
+						// border-left 13px solid rgb(0, 48, 75)
+						filter grayscale(1)
+						cursor pointer
+						z-index 2
+						padding 0							
 						.comentario
 							display none
-							&.over
-								display block
-								background red
-								height 100px
-								width 300px
-								position absolute
-								left 130px
-								padding 5px
-								box-sizing border-box
-								border-right 10px solid rgb(18, 132, 255)
 						&:hover
+							filter grayscale(0)
+							z-index 3
 							.comentario
 								display block
-								background red
+								background rgba(33, 66, 99, 0.92)
 								height 100px
-								width 300px
+								width 200px
 								position absolute
-								left 130px
+								left 100px
 								padding 5px
 								box-sizing border-box
 								border-right 10px solid rgb(18, 132, 255)
-								z-index 10
+								color white
+								// z-index 10 !important
+
+								
 
 
 // .row-casino
